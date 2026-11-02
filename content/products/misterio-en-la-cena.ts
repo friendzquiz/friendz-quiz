@@ -24,7 +24,7 @@ const product: ProductInput = {
     "Papeletas de acusación",
     "6 diplomas",
   ],
-  format: "PDF A4 de 19 páginas para imprimir en casa",
+  format: "PDF A4 de 34 páginas, para imprimir en casa a doble cara",
   currency: "EUR",
   status: "coming_soon",
   featured: true,
@@ -59,7 +59,7 @@ const product: ProductInput = {
     keywords: ["juego de misterio para cenas", "cena con misterio imprimible", "juego de asesinato para Navidad"],
   },
   createdAt: "2026-11-01",
-  updatedAt: "2026-11-01",
+  updatedAt: "2026-11-02",
 };
 
 export default product;

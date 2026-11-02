@@ -43,7 +43,7 @@ export function ButtonLink({ href, children, variant = "primary", external, clas
 export function ComingSoonButton({ children, className = "" }: { children: ReactNode; className?: string }) {
   return (
     <span
-      className={`inline-flex min-h-12 cursor-not-allowed items-center justify-center gap-2 rounded-full border-2 border-dashed border-ink/40 px-6 py-3 font-display text-base font-extrabold text-ink/70 ${className}`}
+      className={`inline-flex min-h-12 cursor-not-allowed items-center justify-center gap-2 rounded-full border-2 border-dashed border-ink/50 px-6 py-3 font-display text-base font-extrabold text-ink ${className}`}
       aria-disabled="true"
     >
       {children}

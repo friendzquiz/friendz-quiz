@@ -5,7 +5,7 @@ import { MobileMenu } from "./MobileMenu";
 
 export function SiteHeader({ currentPath = "/" }: { currentPath?: string }) {
   return (
-    <header className="sticky top-0 z-40 border-b border-ink/10 bg-cream/95 backdrop-blur supports-[backdrop-filter]:bg-cream/80">
+    <header className="sticky top-0 z-40 border-b border-ink/10 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/85">
       <a
         href="#contenido"
         className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-50 focus:rounded-full focus:bg-indigo focus:px-4 focus:py-2 focus:text-white"
@@ -23,7 +23,7 @@ export function SiteHeader({ currentPath = "/" }: { currentPath?: string }) {
                 <Link
                   href={item.href}
                   aria-current={currentPath === item.href ? "page" : undefined}
-                  className="inline-flex min-h-11 items-center rounded-full px-3 font-display text-[15px] font-bold text-ink transition-colors hover:bg-white aria-[current=page]:text-indigo"
+                  className="inline-flex min-h-11 items-center rounded-full px-3 font-display text-[15px] font-bold text-ink transition-colors hover:bg-lavender aria-[current=page]:text-indigo"
                 >
                   {item.label}
                 </Link>

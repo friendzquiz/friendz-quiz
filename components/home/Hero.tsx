@@ -7,9 +7,9 @@ import { Badge } from "@/components/ui/Badge";
 function HeroVisual() {
   return (
     <div className="relative mx-auto aspect-square w-full max-w-[460px]" aria-hidden="true">
-      <div className="absolute inset-[8%] rounded-full bg-blue" />
+      <div className="absolute inset-[8%] rounded-full bg-white/25" />
       <Sparkle className="absolute right-[2%] top-[40%] h-9 w-9 text-yellow" />
-      <Sparkle className="absolute left-[2%] top-[38%] h-5 w-5 text-coral" />
+      <Sparkle className="absolute left-[2%] top-[38%] h-5 w-5 text-white" />
 
       {/* Tarjeta de pregunta */}
       <div
@@ -51,20 +51,22 @@ function HeroVisual() {
 
 export function Hero() {
   return (
-    <section aria-labelledby="hero-title" className="overflow-hidden px-4 pb-16 pt-10 sm:px-6 md:pb-24 md:pt-16">
+    <section aria-labelledby="hero-title" className="relative overflow-hidden bg-blue px-4 pb-16 pt-10 sm:px-6 md:pb-24 md:pt-16">
+      <Sparkle className="absolute left-[4%] top-8 hidden h-6 w-6 text-yellow md:block" />
+      <Sparkle className="absolute bottom-10 left-[44%] hidden h-5 w-5 text-white md:block" />
       <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-[1.05fr_1fr] md:gap-8">
         <div>
           <h1 id="hero-title" className="font-black leading-[0.98] tracking-tight">
-            <span className="mb-4 block font-display text-sm font-extrabold uppercase tracking-[0.18em] text-indigo">Friendz Quiz</span>
-            <span className="block text-[44px] sm:text-6xl lg:text-7xl">Jugar.</span>
-            <span className="block text-[44px] text-indigo sm:text-6xl lg:text-7xl">Reír.</span>
+            <span className="mb-4 block font-display text-sm font-extrabold uppercase tracking-[0.18em] text-ink">Friendz Quiz</span>
+            <span className="block text-[44px] text-white sm:text-6xl lg:text-7xl">Jugar.</span>
+            <span className="block text-[44px] text-ink sm:text-6xl lg:text-7xl">Reír.</span>
             <span className="relative inline-block text-[44px] sm:text-6xl lg:text-7xl">
-              <span className="relative z-10">Conectar.</span>
+              <span className="relative z-10 text-white">Conectar.</span>
               <span aria-hidden="true" className="absolute inset-x-0 bottom-1 z-0 h-4 rounded-full bg-pink sm:h-5" />
             </span>
           </h1>
-          <p className="mt-6 max-w-md text-lg leading-relaxed text-ink/85 sm:text-xl">
-            Juegos para poner a prueba tu cabeza, romper el hielo y hacer que cualquier reunión sea más divertida.
+          <p className="mt-6 max-w-md text-lg font-semibold leading-relaxed text-ink sm:text-xl">
+            Retos, quizzes y juegos para imprimir: para divertirte con tu gente y aprender jugando. Una excusa para jugar juntos.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <ButtonLink href="/juegos">Ver juegos</ButtonLink>
@@ -72,7 +74,7 @@ export function Hero() {
               Jugar online <Badge tone="yellow">Próximamente</Badge>
             </ComingSoonButton>
           </div>
-          <p className="mt-4 text-sm text-ink/70">Juegos para imprimir ya disponibles · {site.instagram.handle}</p>
+          <p className="mt-4 text-sm font-semibold text-ink">Un reto nuevo cada lunes en {site.instagram.handle} · ¿Jugamos? 🧠</p>
         </div>
         <HeroVisual />
       </div>

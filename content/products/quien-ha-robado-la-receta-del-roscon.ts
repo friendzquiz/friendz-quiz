@@ -10,7 +10,6 @@ const product: ProductInput = {
   shortDescription: "Personajes, acciones secretas, 84 pruebas y un culpable entre vosotros.",
   description:
     "Alguien ha robado la receta secreta del roscón. Se juegan al menos 5 pruebas con temática de cocina; después de cada una se lee un informe con las tres misiones que podía cumplir el culpable, y al final cada persona acusa en secreto. Personajes, acciones, pruebas y culpable salen al azar: cada partida es distinta.",
-  minAge: 16,
   players: { min: 4, max: 12 },
   duration: "5 pruebas como mínimo",
   modalities: ["printable"],
@@ -24,7 +23,7 @@ const product: ProductInput = {
     "Informes y tarjetas de «¿A qué sabe?»",
     "Marcador, papeletas y 6 diplomas",
   ],
-  format: "PDF A4 de 41 páginas para imprimir en casa",
+  format: "PDF A4 de 49 páginas, para imprimir en casa a doble cara",
   currency: "EUR",
   status: "coming_soon",
   featured: true,
@@ -59,7 +58,7 @@ const product: ProductInput = {
     keywords: ["juego roscón de Reyes", "juego de misterio imprimible", "juegos para Reyes"],
   },
   createdAt: "2026-11-01",
-  updatedAt: "2026-11-01",
+  updatedAt: "2026-11-02",
 };
 
 export default product;

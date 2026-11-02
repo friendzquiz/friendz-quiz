@@ -10,7 +10,6 @@ const product: ProductInput = {
   shortDescription: "Retos antes de abrir, tres pistas para adivinar quién ha sido y premios para terminar.",
   description:
     "El amigo invisible de siempre con un giro: antes de abrir cada regalo hay que superar un reto, y después toca adivinar quién te lo ha hecho con tres pistas. Incluye cartas para pedir regalo, etiquetas, tarjetas de retos y pistas, el Modo Ladrón y diplomas para entregar al final.",
-  minAge: 16,
   players: { min: 4, max: 20 },
   duration: "Lo que dure el intercambio",
   modalities: ["printable"],
@@ -24,7 +23,7 @@ const product: ProductInput = {
     "Página para quien organiza",
     "Diplomas para entregar al final",
   ],
-  format: "PDF A4 de 21 páginas para imprimir en casa",
+  format: "PDF A4 de 37 páginas, para imprimir en casa a doble cara",
   currency: "EUR",
   status: "coming_soon",
   featured: true,
@@ -59,7 +58,7 @@ const product: ProductInput = {
     keywords: ["amigo invisible imprimible", "juego amigo invisible", "retos para amigo invisible"],
   },
   createdAt: "2026-11-01",
-  updatedAt: "2026-11-01",
+  updatedAt: "2026-11-02",
 };
 
 export default product;

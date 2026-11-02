@@ -24,7 +24,7 @@ const product: ProductInput = {
     "6 diplomas",
     "Reglas para jugar sin presupuesto",
   ],
-  format: "PDF A4 de 16 páginas para imprimir en casa",
+  format: "PDF A4 de 29 páginas, para imprimir en casa a doble cara",
   currency: "EUR",
   status: "coming_soon",
   featured: true,
@@ -59,7 +59,7 @@ const product: ProductInput = {
     keywords: ["amigo invisible sin presupuesto", "amigo invisible divertido", "juego de regalos imprimible"],
   },
   createdAt: "2026-11-01",
-  updatedAt: "2026-11-01",
+  updatedAt: "2026-11-02",
 };
 
 export default product;

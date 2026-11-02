@@ -8,7 +8,6 @@ const product: ProductInput = {
   shortDescription: "Quiz, adivinanzas, retos y charla para que la sobremesa dure hasta las campanadas.",
   description:
     "Un juego imprimible para jugar en grupo después de la cena de Nochebuena, Navidad o Nochevieja. Más de 100 tarjetas de preguntas, adivinanzas y charla, pasatiempos a contrarreloj, villancicos para cantar a dos coros, 12 retos para las campanadas y un marcador por jugador o equipo.",
-  minAge: 16,
   players: { min: 2, max: 12 },
   duration: "Variable",
   difficulty: "mixed",
@@ -25,7 +24,7 @@ const product: ProductInput = {
     "12 retos para las 12 campanadas",
     "Marcador por jugador o equipo y soluciones",
   ],
-  format: "PDF A4 de 48 páginas para imprimir en casa",
+  format: "PDF A4 de 56 páginas, para imprimir en casa a doble cara",
   priceCents: 599,
   currency: "EUR",
   status: "available",
@@ -68,7 +67,7 @@ const product: ProductInput = {
     keywords: ["juegos para la sobremesa de Navidad", "quiz navideño imprimible", "juegos para Nochevieja"],
   },
   createdAt: "2026-10-31",
-  updatedAt: "2026-10-31",
+  updatedAt: "2026-11-02",
 };
 
 export default product;

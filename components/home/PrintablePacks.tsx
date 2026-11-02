@@ -7,7 +7,7 @@ import { Section, Eyebrow } from "@/components/ui/Section";
 
 const steps = [
   { n: "1", title: "Descárgalo", text: "Recibes el PDF al momento." },
-  { n: "2", title: "Imprímelo", text: "En casa, en A4, tantas veces como quieras." },
+  { n: "2", title: "Imprímelo", text: "En casa, en A4 y a doble cara: está todo preparado." },
   { n: "3", title: "A jugar", text: "En grupo o por equipos, con marcador." },
 ];
 

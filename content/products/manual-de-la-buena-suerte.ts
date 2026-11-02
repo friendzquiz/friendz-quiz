@@ -10,7 +10,6 @@ const product: ProductInput = {
   shortDescription: "Las tradiciones de Nochevieja de España y del mundo, con checklist, deseos y cápsula del tiempo.",
   description:
     "Un manual imprimible para la última noche del año: de dónde vienen las uvas y las campanadas, cómo se celebra en otros países, mitos y realidades, una checklist de la buena suerte, una hoja de deseos y una cápsula del tiempo para abrir el año que viene.",
-  minAge: 16,
   players: { min: 1, max: 12 },
   duration: "Toda la noche",
   modalities: ["printable"],
@@ -24,7 +23,7 @@ const product: ProductInput = {
     "Hoja de deseos",
     "Cápsula del tiempo para cada persona",
   ],
-  format: "PDF A4 de 17 páginas para imprimir en casa",
+  format: "PDF A4 de 20 páginas, para imprimir en casa a doble cara",
   currency: "EUR",
   status: "coming_soon",
   featured: false,
@@ -59,7 +58,7 @@ const product: ProductInput = {
     keywords: ["tradiciones de Nochevieja", "imprimible Nochevieja", "supersticiones de fin de año"],
   },
   createdAt: "2026-11-01",
-  updatedAt: "2026-11-01",
+  updatedAt: "2026-11-02",
 };
 
 export default product;

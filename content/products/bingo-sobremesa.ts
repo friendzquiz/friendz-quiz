@@ -8,7 +8,6 @@ const product: ProductInput = {
   shortDescription: "Marca lo que pasa en todas las comidas de Navidad y Nochevieja. 16 cartones distintos para imprimir.",
   description:
     "Un bingo imprimible con las cosas que pasan en todas las comidas navideñas. Cada persona tiene su cartón y va marcando lo que ocurre en la mesa, sin árbitro y sin preparar nada. Incluye 8 cartones de Nochebuena y Navidad, 8 de Nochevieja, reglas, lista de situaciones y diploma para quien gane.",
-  minAge: 16,
   players: { min: 4, max: 16 },
   duration: "Toda la comida",
   modalities: ["printable"],
@@ -22,7 +21,7 @@ const product: ProductInput = {
     "Lista de todas las situaciones",
     "Diploma para quien gane",
   ],
-  format: "PDF A4 de 16 páginas para imprimir en casa",
+  format: "PDF A4 de 27 páginas, para imprimir en casa a doble cara",
   // Precio pendiente de decidir con el resto de la colección: no se muestra hasta tenerlo.
   currency: "EUR",
   status: "available",
@@ -65,7 +64,7 @@ const product: ProductInput = {
     keywords: ["bingo navideño imprimible", "juegos para la comida de Navidad", "bingo de Nochevieja"],
   },
   createdAt: "2026-10-31",
-  updatedAt: "2026-10-31",
+  updatedAt: "2026-11-02",
 };
 
 export default product;

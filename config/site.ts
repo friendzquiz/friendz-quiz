@@ -9,7 +9,7 @@ export const site = {
   claim: "Jugar. Reír. Conectar.",
   title: "Friendz Quiz | Juegos para jugar, reír y conectar",
   description:
-    "Juegos para poner a prueba tu cabeza, romper el hielo y hacer que cualquier reunión sea más divertida. Juegos imprimibles y, muy pronto, partidas online.",
+    "Retos, quizzes y juegos para imprimir: para divertirte con tu gente y aprender jugando. Una excusa para jugar juntos.",
   locale: "es_ES",
   instagram: {
     handle: "@friendzquiz",
@@ -31,12 +31,14 @@ export const site = {
     { label: "Condiciones de venta", href: "/legal/condiciones-de-venta" },
     { label: "Productos digitales", href: "/legal/productos-digitales" },
   ] satisfies NavItem[],
-  /** Calendario semanal de retos de Instagram. */
+  /** Un reto nuevo cada lunes; las temáticas van en ciclo continuo. */
+  challengeCycle: ["Lógica", "Lengua y palabras", "Cine", "Curiosidades"],
+  /** Cómo se vive cada reto durante la semana en Instagram. */
   weeklyChallenges: [
-    { day: "Lunes", topic: "Adivinanzas" },
-    { day: "Martes", topic: "Reto matemático" },
-    { day: "Miércoles", topic: "Cine" },
-    { day: "Jueves", topic: "Lengua y literatura" },
-    { day: "Viernes", topic: "Curiosidades por el mundo" },
+    { day: "Lunes", topic: "Reto nuevo" },
+    { day: "Martes", topic: "Pista" },
+    { day: "Miércoles", topic: "Quiz en stories" },
+    { day: "Jueves", topic: "Último día" },
+    { day: "Viernes", topic: "Solución" },
   ],
 } as const;

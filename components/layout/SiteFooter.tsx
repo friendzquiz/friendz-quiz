@@ -8,7 +8,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
           <Logo />
-          <p className="mt-3 max-w-xs text-sm text-ink/80">{site.claim} Juegos para jugar juntos, en la mesa y muy pronto en el móvil.</p>
+          <p className="mt-3 max-w-xs text-sm text-ink/80">{site.claim} Una excusa para jugar juntos: en la mesa, en Instagram cada lunes y muy pronto en el móvil.</p>
         </div>
         <nav aria-label="Secciones">
           <h2 className="mb-3 text-base font-extrabold">Friendz Quiz</h2>

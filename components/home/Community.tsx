@@ -2,7 +2,7 @@ import { site } from "@/config/site";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Section, Eyebrow } from "@/components/ui/Section";
 
-const dayTones = ["bg-pink", "bg-yellow", "bg-coral", "bg-mint", "bg-blue"];
+const dayTones = ["bg-blue", "bg-lavender", "bg-lavender", "bg-lavender", "bg-yellow"];
 
 /** Comunidad de Instagram sin incrustar el feed (evita cookies de terceros). */
 export function Community() {
@@ -15,15 +15,23 @@ export function Community() {
             También jugamos por Instagram
           </h2>
           <p className="mt-4 max-w-md text-lg text-ink/85">
-            Friendz Quiz nació allí: un reto nuevo cada día para resolver, comentar y compartir con quien siempre dice que lo sabe todo.
+            Friendz Quiz nació allí. Cada lunes hay un reto nuevo para resolver, comentar y compartir con quien siempre dice que lo sabe todo.
           </p>
+          <p className="mt-4 font-display text-sm font-extrabold uppercase tracking-wider text-indigo">Las temáticas, por turnos</p>
+          <ul className="mt-2 flex flex-wrap gap-2">
+            {site.challengeCycle.map((t, i) => (
+              <li key={t} className="rounded-full border-2 border-ink bg-white px-3 py-1 font-display text-sm font-extrabold">
+                {i + 1}. {t}
+              </li>
+            ))}
+          </ul>
           <div className="mt-8">
             <ButtonLink href={site.instagram.url} variant="secondary" external>
               Seguir a {site.instagram.handle}
             </ButtonLink>
           </div>
         </div>
-        <ol className="grid grid-cols-2 gap-3 sm:grid-cols-3" aria-label="Retos de la semana">
+        <ol className="grid grid-cols-2 gap-3 sm:grid-cols-3" aria-label="La semana de cada reto">
           {site.weeklyChallenges.map((c, i) => (
             <li
               key={c.day}

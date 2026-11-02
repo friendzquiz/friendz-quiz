@@ -6,15 +6,15 @@ import { Eyebrow } from "@/components/ui/Section";
 const features = [
   "Crea una partida",
   "Comparte el código",
-  "Invita a tus amigos",
+  "Invita a tu gente",
   "Juega desde el móvil",
   "Compite y mira los resultados",
 ];
 
 const players = [
-  { name: "Laura", tone: "bg-pink" },
+  { name: "Equipo Polvorón", tone: "bg-pink" },
   { name: "Los Turrones Duros", tone: "bg-yellow" },
-  { name: "Marcos", tone: "bg-mint" },
+  { name: "Cerebritos FC", tone: "bg-mint" },
 ];
 
 /** Vista conceptual de la futura partida online. No es funcional. */
@@ -25,7 +25,7 @@ function PhoneMock() {
         <div className="mx-auto mb-4 h-1.5 w-16 rounded-full bg-grey" />
         <p className="text-center font-display text-xs font-bold uppercase tracking-widest text-ink/70">Código de partida</p>
         <p className="mt-1 text-center font-display text-4xl font-black tracking-[0.2em] text-indigo">FZ4821</p>
-        <p className="mt-5 font-display text-sm font-extrabold">En la sala · 3 jugadores</p>
+        <p className="mt-5 font-display text-sm font-extrabold">En la sala · 3 equipos</p>
         <ul className="mt-2 space-y-2">
           {players.map((p) => (
             <li key={p.name} className="flex items-center gap-2 rounded-xl bg-grey px-3 py-2">
