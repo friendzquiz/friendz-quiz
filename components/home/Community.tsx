@@ -12,7 +12,7 @@ const topics = [
   { label: "Palabras", tone: "bg-mint", pos: "right-[2%] top-[4%] rotate-6" },
   { label: "Cine", tone: "bg-pink", pos: "left-[0%] top-[46%] rotate-3" },
   { label: "Curiosidades", tone: "bg-white", pos: "right-[0%] top-[44%] -rotate-3" },
-  { label: "Adivinanzas", tone: "bg-lavender", pos: "left-[8%] bottom-[4%] rotate-2" },
+  { label: "Adivinanzas", tone: "bg-blue", pos: "left-[8%] bottom-[4%] rotate-2" },
   { label: "¿Y el próximo?", tone: "bg-coral", pos: "right-[6%] bottom-[2%] -rotate-2" },
 ];
 
@@ -54,7 +54,7 @@ function TopicsAroundCerebrito() {
 /** Comunidad: retos semanales y todas las redes. Sin incrustar feeds (evita cookies de terceros). */
 export function Community() {
   return (
-    <Section labelledBy="comunidad-title">
+    <Section labelledBy="comunidad-title" className="bg-lavender">
       <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.1fr]">
         <div>
           <Eyebrow className="text-indigo">Comunidad</Eyebrow>
