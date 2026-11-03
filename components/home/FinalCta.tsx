@@ -10,7 +10,7 @@ export function FinalCta() {
         <Sparkle className="absolute bottom-10 right-10 h-6 w-6 text-white" />
         <Cerebrito mood="happy" pose="up" className="mx-auto h-28 w-auto" />
         <h2 id="cta-title" className="mt-4 text-4xl font-black text-white sm:text-6xl">
-          ¿Jugamos? 🧠
+          ¿Jugamos?
         </h2>
         <p className="mx-auto mt-3 max-w-md text-lg font-semibold text-ink">Elige un juego, junta a tu gente y que empiece la partida.</p>
         <div className="mt-8 flex justify-center">

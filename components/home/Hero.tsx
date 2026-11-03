@@ -74,7 +74,7 @@ export function Hero() {
               Jugar online <Badge tone="yellow">Próximamente</Badge>
             </ComingSoonButton>
           </div>
-          <p className="mt-4 text-sm font-semibold text-ink">Un reto nuevo cada lunes en {site.instagram.handle} · ¿Jugamos? 🧠</p>
+          <p className="mt-4 text-sm font-semibold text-ink">Un reto nuevo cada lunes en {site.instagram.handle} · ¿Jugamos?</p>
         </div>
         <HeroVisual />
       </div>
