@@ -15,7 +15,7 @@ const organizationJsonLd = {
   name: site.name,
   url: site.url,
   logo: `${site.url}/og.png`,
-  sameAs: [site.instagram.url],
+  sameAs: site.social.filter((s) => s.url).map((s) => s.url),
 };
 
 export default async function Page() {

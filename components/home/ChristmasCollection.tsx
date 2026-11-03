@@ -1,35 +1,40 @@
 import type { Product } from "@/domain/product";
-import { ProductCard } from "@/components/product/ProductCard";
+import { Cerebrito } from "@/components/brand/Cerebrito";
 import { Sparkle } from "@/components/brand/Sparkle";
-import { Section, Eyebrow } from "@/components/ui/Section";
+import { ButtonLink } from "@/components/ui/ButtonLink";
+import { Eyebrow } from "@/components/ui/Section";
 
-/** Colección de temporada: todos los juegos de Navidad, Nochevieja y Reyes. */
+/** Banner de la colección de temporada. No repite las fichas: lleva al catálogo de imprimibles. */
 export function ChristmasCollection({ products }: { products: Product[] }) {
   if (products.length === 0) return null;
+  const moments = ["Sobremesa", "Amigo invisible", "Nochevieja", "Misterio", "Reyes"];
 
   return (
-    <Section labelledBy="navidad-title" className="relative overflow-hidden bg-lavender">
-      <Sparkle className="absolute right-6 top-8 h-8 w-8 text-yellow" />
-      <Sparkle className="absolute bottom-10 left-6 h-5 w-5 text-coral" />
-      <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+    <section aria-labelledby="navidad-title" className="px-4 py-12 sm:px-6 md:py-16">
+      <div className="relative mx-auto grid max-w-6xl items-center gap-8 overflow-hidden rounded-[2rem] border-2 border-ink bg-lavender px-6 py-10 sm:px-10 md:grid-cols-[1fr_auto]">
+        <Sparkle className="absolute right-8 top-6 h-8 w-8 text-yellow" />
+        <Sparkle className="absolute bottom-8 left-[48%] h-5 w-5 text-coral" />
         <div>
           <Eyebrow className="text-indigo">Colección de Navidad</Eyebrow>
           <h2 id="navidad-title" className="text-4xl font-black sm:text-5xl">
             De Nochebuena a Reyes
           </h2>
+          <p className="mt-3 max-w-xl text-lg text-ink/85">
+            {products.length} juegos para imprimir y sacar en cada comida de estas fiestas.
+          </p>
+          <ul className="mt-5 flex flex-wrap gap-2">
+            {moments.map((m) => (
+              <li key={m} className="rounded-full border-2 border-ink bg-white px-3 py-1 font-display text-sm font-extrabold">
+                {m}
+              </li>
+            ))}
+          </ul>
+          <div className="mt-7">
+            <ButtonLink href="/packs-imprimibles">Ver la colección</ButtonLink>
+          </div>
         </div>
-        <p className="max-w-sm text-ink/80">
-          Juegos para imprimir y sacar en cada comida de estas fiestas: sobremesa, amigo invisible, Nochevieja y misterio.
-        </p>
+        <Cerebrito mood="happy" pose="wave" hat className="mx-auto h-44 w-auto md:h-56" />
       </div>
-
-      <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {products.map((product) => (
-          <li key={product.id}>
-            <ProductCard product={product} />
-          </li>
-        ))}
-      </ul>
-    </Section>
+    </section>
   );
 }

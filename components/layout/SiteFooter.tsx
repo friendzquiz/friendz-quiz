@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { site } from "@/config/site";
 import { Logo } from "@/components/brand/Logo";
+import { SocialLinks } from "@/components/brand/SocialLinks";
 
 export function SiteFooter() {
   return (
@@ -9,6 +10,7 @@ export function SiteFooter() {
         <div>
           <Logo />
           <p className="mt-3 max-w-xs text-sm text-ink/80">{site.claim} Una excusa para jugar juntos: en la mesa, en Instagram cada lunes y muy pronto en el móvil.</p>
+          <SocialLinks className="mt-4" />
         </div>
         <nav aria-label="Secciones">
           <h2 className="mb-3 text-base font-extrabold">Friendz Quiz</h2>
