@@ -23,6 +23,7 @@ const product: ProductInput = {
   ],
   format: "PDF A4 de 27 páginas, para imprimir en casa a doble cara",
   // Precio pendiente de decidir con el resto de la colección: no se muestra hasta tenerlo.
+  priceCents: 499,
   currency: "EUR",
   status: "available",
   featured: true,
@@ -64,7 +65,7 @@ const product: ProductInput = {
     keywords: ["bingo navideño imprimible", "juegos para la comida de Navidad", "bingo de Nochevieja"],
   },
   createdAt: "2026-10-31",
-  updatedAt: "2026-11-02",
+  updatedAt: "2026-11-03",
 };
 
 export default product;

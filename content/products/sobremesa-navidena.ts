@@ -25,7 +25,7 @@ const product: ProductInput = {
     "Marcador por jugador o equipo y soluciones",
   ],
   format: "PDF A4 de 56 páginas, para imprimir en casa a doble cara",
-  priceCents: 599,
+  priceCents: 699,
   currency: "EUR",
   status: "available",
   featured: true,
@@ -67,7 +67,7 @@ const product: ProductInput = {
     keywords: ["juegos para la sobremesa de Navidad", "quiz navideño imprimible", "juegos para Nochevieja"],
   },
   createdAt: "2026-10-31",
-  updatedAt: "2026-11-02",
+  updatedAt: "2026-11-03",
 };
 
 export default product;

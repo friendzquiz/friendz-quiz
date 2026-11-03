@@ -1,6 +1,5 @@
 import type { ProductInput } from "@/domain/product";
 
-// Precio pendiente de confirmar: mientras no esté, la web no lo muestra.
 const product: ProductInput = {
   id: "FQ-0003",
   slug: "amigo-invisible-con-retos",
@@ -23,6 +22,7 @@ const product: ProductInput = {
     "Diplomas para entregar al final",
   ],
   format: "PDF A4 de 37 páginas, para imprimir en casa a doble cara",
+  priceCents: 599,
   currency: "EUR",
   status: "available",
   featured: true,
