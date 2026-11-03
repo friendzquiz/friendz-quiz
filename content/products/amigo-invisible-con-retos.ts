@@ -1,7 +1,6 @@
 import type { ProductInput } from "@/domain/product";
 
-// Enlace de Gumroad pendiente: el juego se muestra como «Próximamente» hasta tenerlo.
-// Precio pendiente de decidir con el resto de la colección.
+// Precio pendiente de confirmar: mientras no esté, la web no lo muestra.
 const product: ProductInput = {
   id: "FQ-0003",
   slug: "amigo-invisible-con-retos",
@@ -25,7 +24,7 @@ const product: ProductInput = {
   ],
   format: "PDF A4 de 37 páginas, para imprimir en casa a doble cara",
   currency: "EUR",
-  status: "coming_soon",
+  status: "available",
   featured: true,
   images: [
     {
@@ -50,7 +49,14 @@ const product: ProductInput = {
       height: 1272,
     },
   ],
-  channels: [],
+  channels: [
+    {
+      type: "gumroad",
+      url: "https://friendzquiz.gumroad.com/l/amigo-invisible-retos?wanted=true",
+      productPageUrl: "https://friendzquiz.gumroad.com/l/amigo-invisible-retos",
+      active: true,
+    },
+  ],
   seo: {
     title: "Amigo Invisible con Retos · Imprimible | Friendz Quiz",
     description:
@@ -58,7 +64,7 @@ const product: ProductInput = {
     keywords: ["amigo invisible imprimible", "juego amigo invisible", "retos para amigo invisible"],
   },
   createdAt: "2026-11-01",
-  updatedAt: "2026-11-02",
+  updatedAt: "2026-11-03",
 };
 
 export default product;
