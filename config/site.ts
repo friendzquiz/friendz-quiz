@@ -19,7 +19,7 @@ export const site = {
   social: [
     { network: "instagram", label: "Instagram", handle: "@friendzquiz", url: "https://www.instagram.com/friendzquiz/" },
     { network: "tiktok", label: "TikTok", handle: "@friendz.quiz", url: "https://www.tiktok.com/@friendz.quiz" },
-    { network: "facebook", label: "Facebook", handle: "Friendz Quiz", url: "" },
+    { network: "facebook", label: "Facebook", handle: "Friendz Quiz", url: "https://www.facebook.com/218965454631464" },
     { network: "youtube", label: "YouTube", handle: "Friendz Quiz", url: "https://www.youtube.com/channel/UCnq131xDtqO0TgIaYUyx9uQ" },
   ],
   /** Navegación aprobada. Jugar online, Mis juegos y Mi cuenta llegarán después. */
